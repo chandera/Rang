@@ -1,0 +1,413 @@
+@charset "UTF-8";
+
+/*------------GLOBAL----------------*/
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+nav, footer, header {
+	height: 90%;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+.main {
+	padding-bottom: 2em;
+}
+
+.content {
+	max-width: 760px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.label, form#signup .label{
+	font-family: Helvetica, Arial, sans-serif;
+	width: 19%;
+	padding: .25% 5% 0 0;
+	text-transform: uppercase;	
+	font-weight: bold;
+}
+
+label {
+	clear: left;
+	float: left;
+	margin-left: 5%;
+	margin-right: auto;
+}
+
+.labelBlock {
+	margin-left: 5%;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: .7vw;
+	font-weight: bold;
+	margin-bottom: 2%;
+}
+
+.form {
+	margin-top: 3%;
+	margin-left: 5%;
+}
+
+option {
+	margin-left: 5%;
+}
+
+.form label {
+	margin-right: 15%;
+	font-size: 1vw;
+}
+
+div.indent {
+	display: flex;
+	margin-right: 5%;
+	word-wrap: break-word;
+	overflow: hidden;
+	text-overflow: clip;
+}
+
+#signup label.error {
+  font-size: 0.8em;
+  color: #F00;
+  font-weight: bold;
+  display: block;
+  margin-left: 45%;
+}
+#signup  input.error, #signup select.error  {
+  background: #FFA9B8;
+  border: 1px solid red;
+}
+
+input {
+	margin-bottom: 1%;
+}
+
+.indent input {
+	margin-left: 6%;
+}
+
+.indent label {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: .8vw;
+	width: 100%;
+}
+
+.main {
+}
+
+#submit {
+	margin-top: 5%;
+	margin-left: 40%;
+}
+
+#resume, #portfolio, #neither, #both {
+	font-size: .75em;
+}
+/*----------NAVIGATION------------*/
+article.decoLine {
+	color: #8fc85e;
+	font-size: 40px;
+}
+
+nav#mainNav {
+	width: 62px;
+	position: absolute;
+}
+
+nav#mainNav a {
+	text-decoration: none;
+	color: black;
+}
+nav#mainNav ul {
+	list-style-type: none;
+	font: 24px Helvetica, sans-serif;
+}
+ul#subNav li {
+	text-transform: uppercase;
+	text-align:center;
+}
+/*------------DESKTOP--------------*/
+section.flex-container{
+	display: flex;
+	flex-direction: column;
+	padding-top: 25px;
+	width: 100%;
+	height: 100%;
+}
+.col {
+	flex-direction: row;
+	padding-left: 100px;
+	width: 100%;
+	height: 40%;
+	font-size: 100%;
+}
+
+.one {
+	display: flex;
+	width: 100%;
+	height: 50%;
+}
+
+.two {
+	display: flex;
+	width: 100%;
+	height: 30%;
+}
+h1 {
+	font: 3vw Helvetica, sans-serif;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: left;
+	height: 10%;
+	margin-left: 5%;
+}
+
+h4 {
+	font: 1.5vw Helvetica, sans-serif;
+	margin-top: 5%;
+	padding-top: 5%;
+	margin-left: 5%;
+	text-align: left;
+}
+
+h1 a {
+	text-decoration: none;
+	color: black;
+}
+
+h2 {
+	font: 24px Helvetica Neue, Helvetica, sans-serif;
+	text-decoration: none;
+	padding: 5px 0px;
+	width: 100%;
+	height: 50px;
+	background-color: rgb(190, 230, 255);
+}
+
+h3 {
+	font: 18px Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	color: white;
+	margin-left: 2.5%;
+}
+
+.Gal {
+	background-color: black;
+}
+
+.Fill {
+	max-height: 100px;
+	max-width: 380px;
+	background-color: white;
+	height: 8%;
+	min-height: 50px;
+	width: 100%;
+	word-wrap: break-word;
+	margin-left: 5%;
+	padding-bottom: 2%;
+}
+
+#gal1 {
+	margin-top: 2%;
+	max-height: 690px;
+	height: 100%;
+	width: 40%;
+	background: #71a349 url(../images/mountains.jpg) no-repeat;
+	background-size: cover;
+}
+#gal2 {
+	background-color: black;
+	height: 100%;
+	width: 15%;
+	max-height: 700px;
+	margin-top: 3%;
+}
+
+#gal3 {
+	background-color: #8fc85e;
+	height: 120.5%;
+	width: 20%;
+	max-height: 700px;
+	margin-left: 2.5%;
+	margin-top: -2.5%;
+}
+
+#gal4 {
+	margin-top: 3%;
+	height: 100%;
+	width: 45%;
+	min-height: 100px;
+	margin-left: 2.5%;
+	background: #62725a url(../images/Bcard.png) no-repeat right;
+	background-size: contain;
+	background-size: 45%;
+}
+
+#gal7 {
+	text-align: left;
+	background-color: transparent;
+	font-family: helvetica, arial, sans-serif;
+	font-size: 1vw;
+	margin-top: 148%;
+	font-weight: bold;
+}
+
+#gal7 a{
+	list-style-type: none;
+	text-decoration: none;
+	color: black;
+}
+
+.social {
+	width: 80%;
+	height: 80%;
+}
+.social li{
+	display: flex;
+	justify-content: space-between;
+}
+
+#gal2 ul li a{
+	flex: 1 1 0;
+	font-size: 3vw;
+}
+
+#gal2 .social li a {
+	text-indent: -10000px;
+	height: 100%;
+	width: 100%;
+}
+
+.ig {
+	background-image: url(../images/instagram-5-512.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	padding-right: 5%;
+}
+
+.tw {
+	background-image: url(../images/twitter-4-512.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	padding-right: 5%;
+}
+
+.ld {
+	background-image: url(../images/linkedin-4-512.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+
+#contactpg {
+	top: 0;
+}
+
+button {
+	display: none;
+	font-weight: bold;
+	text-align: center;
+	width: 62px;
+	cursor: pointer;
+	list-style-type: none;
+}
+
+button {
+	border: none;
+	background-color: white;
+}
+/*------------GLOBAL---------------*/
+
+/*------------TABLET----------------*/
+@media only screen and (max-width: 1080px) {
+	
+	#hamClosed {
+		display: block;
+		font-size: 24px;
+		margin-left: 19px;
+	}
+	
+	#hamOpen {
+		font-size: 26px;
+		margin-left: 19px;
+	}
+
+	ul{
+		display: none;
+	}
+	
+	h4 {
+		 margin-left: 40%;
+	}
+	
+	nav {
+		position: relative;
+	}
+	section.flex-container {
+		display: block;
+	}
+	
+	div.fill {
+		padding-left: 5%;
+		margin-top 20%;
+	}
+	.col {
+		display: block;
+		width: 70%;
+		height: 50%;
+	}
+	h1 {
+		margin-left: 5%;
+	}
+	#contactpg {
+		top: 10%;
+	}
+	#gal1, #gal3, #gal4{
+	width: 100%;
+	max-width: 768px;
+	height: 90%;
+	background-size: cover;
+	margin-left: auto;
+	margin-right: auto;
+	}
+	#gal4{
+		margin-bottom: 5%;
+		background-image: none;
+	}
+	
+	#gal2{
+		visibility: hidden;
+	}
+	
+	.gal {
+		background-color: #8fc85e;
+	}
+	.social {
+		display: none;
+	}
+	
+	.main {
+		color: white;
+		text-align: left;
+		margin: 0;
+		padding: 0;
+	}
+	
+	.form {
+		margin: 0;
+		padding-left: 40%;
+	}
+}
+/*------------GLOBAL--------------*/
+
+/*------------MOBILE--------------*/
+
+/*------------GLOBAL-------------*/

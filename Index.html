@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>Graphic Design Portfolio</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css"/>
+	<script src="scripts/jquery-3.3.1.js"></script>
+	<script src="scripts/mainScript.js"></script>
+	<script src="scripts/jquery.validate.min.js"></script>
+</head>
+<body>
+
+<header>
+
+	<section class="flex-container">
+			<nav id="mainNav">
+				<button onclick="openFunction()" id="hamClosed">&#8801;</button>
+				<button onclick="closeFunction()" id="hamOpen">&times;</button>
+		<ul id="subNav">
+			<li><a href="Index.html">p<br>o<br>r<br>t<br>f<br>o<br>l<br>i<br>o</a><article class="decoLine">&#95;</article></li>
+			<li><a href="About.html"><br>a<br>b<br>o<br>u<br>t</a><article class="decoLine">&#95;</article></li>
+			<li><a href="Contact.html"><br>c<br>o<br>n<br>t<br>a<br>c<br>t</a></li>
+		</ul>
+
+	</nav>
+	
+				<section class="col 1">
+			<div class="Gal" id="gal1"></div>
+				<div class="Fill"><h1><a href="Index.html">portfolio</a></h1></div>
+			<div class="Gal" id="gal2"></div>
+				</section>
+				<section class="col 2">
+			<div class="Gal" id="gal3"></div>
+				<div class="Fill"><h1><a href="About.html">about</a></h1></div>
+			<div class="Gal" id="gal4"></div>
+				</section>
+				<section class="col 3">
+			<div class="Gal" id="gal5"></div>
+				<div class="Fill"><h1><a href="Contact.html">contact</a></h1></div>
+			<div class="Gal" id="gal6"></div>
+				</section>
+				<section class="col 4">
+		<div class="Gal" id ="gal7">WEL<br><br>COME</div>
+			 </section>
+
+</section>
+</header>
+
+	
+	<div class="content">
+	<div class="main">
+	<h4>Contact me!</h4>
+		<form action="process.html" method="post" name="signup" id="signup">
+			<div class="form">
+				<label for="name" class="label">Name </label>
+				<input name="name" type="text" class="required" id="name" title="Please type your name.">
+			</div>
+			<div class="form">
+				<label for="email" class="label">E-mail Address</label>
+				<input name="email" type="text" class="required" id="email" title="Please type a valid email address.">
+			</div>
+			<div class="form">
+				<label for="comments" class="label">Comments</label>
+				<textarea name="comments" title="Feel free to leave a comment about the website or a question for me" cols="15" rows="5" id="comments"></textarea>
+			</div>
+			<div class="labelBlock">Would you like a copy of my r&eacute;sum&eacute; and portfolio?</div>
+			<div class="indent">
+				<input type="radio" name="contact" id="resume" value="resume">
+				<label for="resume">R&eacute;sum&eacute;</label>
+				<input type="radio" name="contact" id="portfolio" value="portfolio">
+				<label for="portfolio">Portfolio</label>
+				<input type="radio" name="contact" id="both" value="both">
+				<label for="both">Both</label>
+				<input type="radio" name="contact" id="neither" value="neither">
+				<label for="both">Neither</label>
+			</div>
+			<div>
+				<input type="submit" name="submit" id="submit" value="Submit">
+			</div>
+		</form>
+		</div>
+	</div>
+</body>
+
+
+
+
+</html>
